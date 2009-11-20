@@ -162,7 +162,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\multitimer\MsTimer2.cpp"
+				RelativePath=".\MsTimer2.cpp"
 				>
 			</File>
 		</Filter>
@@ -172,7 +172,7 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\multitimer\MsTimer2.h"
+				RelativePath=".\MsTimer2.h"
 				>
 			</File>
 		</Filter>
