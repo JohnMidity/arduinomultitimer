@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1252\deff0\uc1{\fonttbl{\f0\fcharset0 Times New Roman;}{\f1\fcharset0
+Arial;}}{\colortbl ;}{\stylesheet{\s0\nowidctlpar\nooverflow\sl240\slmult1\f0\fs20
+\kerning28 Normal;}}\paperw12240\paperh15840\margt1440\margl1800\margr1800\margb1440
+\headery720\footery864\deftab720\pgnstart1\viewkind1\viewscale100\fet0{\*\docvar
+{ColorSet}{-1}}{\*\docvar{ColorPos}{-1}}{\*\docvar{StyleSet}{-1}}{\*\docvar{StylePos
+}{-1}}\pard\plain\pard\nowidctlpar\nooverflow\sl240\slmult1{\b\f1\lang1043\fs36\kerning28
+{\header\pard\nowidctlpar\nooverflow\sl240\slmult1\tqc\tx4320\tqr\tx8640{\f0\lang1033
+\fs20\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1\tqc\tx4320\tqr\tx8640{\f0\fs20\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1\tqc\tx4320\tqr\tx8640{\fs20\par}
+
+\fs20\par}{\footer\pard\nowidctlpar\nooverflow\sl240\slmult1\tqc\tx4320\tqr\tx8640
+{\f0\lang1033\fs20\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1\tqc\tx4320\tqr\tx8640{\f0\fs20\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1\tqc\tx4320\tqr\tx8640{\fs20\par}
+
+\fs20\par}MultiTimer2 Library\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 Copyright
+ (c) 2009 John Zandbergen.  All right reserved.\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 MultiTimer2
+ is a library that makes it possible to have multiple tasks called every couple 
+of milliseconds. For every task you can set the delay and the number of times it
+ should be called. \par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\b\f1\lang1043\fs20\kerning28 Installation
+:\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 Copy the 
+contents of the ZIP file in your libraries folder alongside you other libraries.
+\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 Make sure
+ you have Javier Valencia's MsTimer2 library installed. Download if necessary from
+ here: http://www.arduino.cc/playground/Main/MsTimer2 \par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\b\f1\lang1043\fs20\kerning28 Usage:\par
+}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 Include both
+ MultiTimer2.h \u225\'e1nd MsTimer2.h in your sketch.\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 To add a 
+function to be run every "m" milliseconds, "count" number of times call\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\i\f1\lang1043\fs20\kerning28\tab MultiTimer2
+::AddTask(function, m, count); \par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 To check 
+to see if the MultiTimer is running or if it\u8217\'92s ready, test {\i MultiTimer2
+::IsRunning}. It will be 0 if the multitimer is not running\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 If it is 
+not running, you'll need to start it by using:\tab{\i MultiTimer2::start();}\par
+}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\b\f1\lang1043\fs20\kerning28 Remarks
+:\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 - You can
+ add tasks while other tasks are running.\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 - Add as 
+many tasks as long as memory lasts.\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28 - DON'T use
+ delay in tasks. The interrupt system of the atMega does not like that, me neither
+, use a different task instead.\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\b\f1\lang1043\fs20\kerning28 Send your
+ likes and dislikes to John.Zandbergen@gmail.com\par}
+
+\pard\nowidctlpar\nooverflow\sl240\slmult1{\f1\lang1043\fs20\kerning28  \par}
+
+}
