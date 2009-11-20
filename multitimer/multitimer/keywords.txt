@@ -1,0 +1,22 @@
+#######################################
+# Syntax Coloring Map For MultiTimer2
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MultiTimer2	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+AddTask	KEYWORD2
+start	KEYWORD2
+clear	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+IsRunning	KEYWORD2
